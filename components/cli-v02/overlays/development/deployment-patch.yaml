@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: cli-v02
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/rhtap-contract-tenant/ec-v02/cli-v02@sha256:5e7bfee13d18fdfe56cdaec78d85797eab0dce6f5ceab6e7df27df60b74a04a4
+        name: container-image
+        resources: {}
+status: {}
